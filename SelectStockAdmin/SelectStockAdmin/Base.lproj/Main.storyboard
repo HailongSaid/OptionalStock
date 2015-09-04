@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJp-LE-CPg">
+                                <rect key="frame" x="214" y="258" width="65" height="30"/>
+                                <color key="backgroundColor" red="0.13059343056704087" green="1" blue="0.43308192273404222" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="wjc-Bo-Ukh"/>
+                                </constraints>
+                                <state key="normal" title="提交">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xXi-4E-3Zk"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="吴通讯" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="16C-nk-7x9">
+                                <rect key="frame" x="16" y="124" width="164" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="89D-7P-SgG"/>
+                                    <constraint firstAttribute="height" constant="30" id="e8E-bA-bmp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="505050.4" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRZ-kj-LrW">
+                                <rect key="frame" x="16" y="191" width="164" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="3Qs-Vy-rbD"/>
+                                    <constraint firstAttribute="height" constant="30" id="tAb-Fe-yan"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="股票代码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Roj-za-Gdl">
+                                <rect key="frame" x="64" y="28" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="股票名称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PG4-p4-A81">
+                                <rect key="frame" x="64" y="95" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="股票价格" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwh-mm-Wdq">
+                                <rect key="frame" x="64" y="162" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-50505.4" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uLw-aA-VQE">
+                                <rect key="frame" x="16" y="258" width="164" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="770-6U-MR1"/>
+                                    <constraint firstAttribute="width" constant="164" id="DLz-LN-Wna"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="股票涨幅" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUV-Ic-23Y">
+                                <rect key="frame" x="64" y="229" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="305222" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HOs-JS-fqc">
+                                <rect key="frame" x="16" y="57" width="164" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="dqf-CV-QvA"/>
+                                    <constraint firstAttribute="height" constant="30" id="mI8-mH-yYy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dwh-mm-Wdq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="48" id="1WK-Mv-oM3"/>
+                            <constraint firstItem="uLw-aA-VQE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8oG-Ky-03Z"/>
+                            <constraint firstItem="Roj-za-Gdl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="BjR-0G-v7P"/>
+                            <constraint firstItem="16C-nk-7x9" firstAttribute="top" secondItem="PG4-p4-A81" secondAttribute="bottom" constant="8" id="BpT-Jg-smQ"/>
+                            <constraint firstItem="gRZ-kj-LrW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ize-CF-kma"/>
+                            <constraint firstItem="dwh-mm-Wdq" firstAttribute="top" secondItem="16C-nk-7x9" secondAttribute="bottom" constant="8" id="RXw-AL-8cl"/>
+                            <constraint firstItem="HOs-JS-fqc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XdS-7O-d9a"/>
+                            <constraint firstItem="jJp-LE-CPg" firstAttribute="top" secondItem="uLw-aA-VQE" secondAttribute="top" id="YR3-0A-maB"/>
+                            <constraint firstItem="PG4-p4-A81" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="48" id="Ysm-MC-5RH"/>
+                            <constraint firstItem="eUV-Ic-23Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="48" id="b4E-lt-B4k"/>
+                            <constraint firstItem="HOs-JS-fqc" firstAttribute="top" secondItem="Roj-za-Gdl" secondAttribute="bottom" constant="8" id="cSO-Of-Fvg"/>
+                            <constraint firstItem="jJp-LE-CPg" firstAttribute="leading" secondItem="uLw-aA-VQE" secondAttribute="trailing" constant="34" id="fBX-0p-fgb"/>
+                            <constraint firstItem="16C-nk-7x9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="guB-6b-3vb"/>
+                            <constraint firstItem="eUV-Ic-23Y" firstAttribute="top" secondItem="gRZ-kj-LrW" secondAttribute="bottom" constant="8" id="jb7-G2-kKn"/>
+                            <constraint firstItem="PG4-p4-A81" firstAttribute="top" secondItem="HOs-JS-fqc" secondAttribute="bottom" constant="8" id="kF4-eR-APf"/>
+                            <constraint firstItem="Roj-za-Gdl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="48" id="mer-YL-kkZ"/>
+                            <constraint firstItem="gRZ-kj-LrW" firstAttribute="top" secondItem="dwh-mm-Wdq" secondAttribute="bottom" constant="8" id="zah-KJ-48a"/>
+                            <constraint firstItem="uLw-aA-VQE" firstAttribute="top" secondItem="eUV-Ic-23Y" secondAttribute="bottom" constant="8" id="zz2-U7-uph"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stockCodeTF" destination="HOs-JS-fqc" id="Mjr-w1-r7D"/>
+                        <outlet property="stockFloatingPriceTF" destination="uLw-aA-VQE" id="Aq8-oo-Rm6"/>
+                        <outlet property="stockNameTF" destination="16C-nk-7x9" id="nYc-kv-eTA"/>
+                        <outlet property="stockPriceTF" destination="gRZ-kj-LrW" id="rzf-VD-OpF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464" y="387"/>
+        </scene>
+    </scenes>
+</document>
